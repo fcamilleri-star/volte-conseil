@@ -252,7 +252,7 @@ function handleSubmit(e) {
   const btn = form.querySelector('[type="submit"]');
   const success = document.getElementById('cfSuccess');
   btn.disabled = true;
-  fetch('https://voltecg.cluster129.hosting.ovh.net/mail.php', {
+  fetch('https://www.volte-conseil.fr/mail.php', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams(new FormData(form)).toString()
