@@ -129,6 +129,8 @@
   .hero-inner { flex: 1 !important; display: flex !important; flex-direction: column !important; gap: 0 !important; min-height: 0 !important; overflow: hidden !important; }
   .hero-eyebrow { font-size: 9px !important; padding: 7px 12px !important; align-self: center !important; flex-shrink: 0 !important; }
   .hero-sectors { display: none !important; }
+  .hero-sectors-mobile { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: 6px 10px !important; margin-top: 10px !important; flex-shrink: 0 !important; }
+  .hero-sectors-mobile span { font-family: var(--mono) !important; font-size: 8px !important; letter-spacing: .15em !important; text-transform: uppercase !important; color: rgba(255,255,255,.45) !important; }
   .hero h1 { font-size: clamp(32px, 9vw, 46px) !important; line-height: 1.0 !important; letter-spacing: -.02em !important; margin-top: auto !important; flex-shrink: 0 !important; }
   .hero-sub { font-size: 15px !important; line-height: 1.58 !important; max-width: 100% !important; margin-top: 14px !important; flex-shrink: 0 !important; }
   .hero-actions { flex-direction: column !important; align-items: stretch !important; gap: 10px !important; margin-top: auto !important; padding-top: 20px !important; flex-shrink: 0 !important; }

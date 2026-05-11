@@ -110,6 +110,7 @@ img { max-width:100%; display:block; }
 .hero-sectors span::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--bolt); box-shadow:0 0 8px var(--bolt); flex-shrink:0; }
 .hero-sectors.right span { flex-direction:row-reverse; }
 @media (max-width:1100px) { .hero-sectors { display:none; } }
+.hero-sectors-mobile { display: none; }
 .hero-sub b { color:#fff; font-weight:600; }
 .hero-actions { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; padding-bottom:60px; }
 .hero-scroll {
