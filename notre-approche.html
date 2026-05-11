@@ -1,0 +1,743 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre approche · Diagnostic, pilotage, transformation & redressement — VOLTE</title>
+  <meta name="description" content="Cinq modes d'intervention pragmatiques et combinables : diagnostic, conseil embarqué, pilotage de projet, conduite du changement, redressement. VOLTE s'adapte à votre contexte. Toulouse · Paris.">
+  <meta name="keywords" content="diagnostic stratégique, conseil embarqué, pilotage de projet, conduite du changement, redressement, accompagnement transformation, cabinet conseil indépendant, maîtrise des risques, Toulouse, Paris">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://volte-conseil.fr/notre-approche.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://volte-conseil.fr/notre-approche.html">
+  <meta property="og:site_name" content="VOLTE">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Notre approche · Diagnostic, pilotage, transformation & redressement — VOLTE">
+  <meta property="og:description" content="Cinq modes d'intervention pragmatiques et combinables. Du diagnostic au redressement, VOLTE s'adapte à votre contexte. Toulouse · Paris.">
+  <meta property="og:image" content="https://volte-conseil.fr/assets/Volte.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notre approche · Diagnostic, pilotage, transformation & redressement — VOLTE">
+  <meta name="twitter:description" content="Cinq modes d'intervention pragmatiques et combinables. Du diagnostic au redressement, VOLTE s'adapte à votre contexte. Toulouse · Paris.">
+  <meta name="twitter:image" content="https://volte-conseil.fr/assets/Volte.png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="VOLTE">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300;1,9..144,700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+/* ── HERO ── */
+.hero-approche {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg,
+    #081A23 0%, #081A23 40%,
+    #0C2E3A 58%, #135D66 74%,
+    #1A7A88 85%, #5BBEC8 93%, #EAF6F7 100%
+  );
+  padding: 130px clamp(20px,4vw,48px) clamp(200px,25vh,280px);
+}
+.ha-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 0 40px;
+}
+.ha-halo-1 {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  width: 500px; height: 320px; top: -80px; right: -80px;
+  background: radial-gradient(ellipse, rgba(19,93,102,.3) 0%, transparent 70%);
+  animation: pulse 6s ease-in-out infinite;
+}
+.ha-halo-2 {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  width: 300px; height: 200px; bottom: 80px; left: 15%;
+  background: radial-gradient(ellipse, rgba(245,197,24,.1) 0%, transparent 65%);
+  animation: pulse 8s ease-in-out 1.5s infinite;
+}
+
+/* Pills de mode en bas du hero */
+.mode-pills {
+  position: absolute;
+  bottom: 135px; left: 0; right: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 24px;
+  z-index: 3;
+}
+.mode-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(255,255,255,.06);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+  transition: background .2s, border-color .2s, color .2s;
+  white-space: nowrap;
+}
+.mode-pill:hover {
+  background: rgba(245,197,24,.18);
+  border-color: rgba(245,197,24,.55);
+  color: var(--bolt);
+}
+
+/* ── SECTIONS MODE ── */
+.mode-section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Alternance clair/sombre */
+.mode-section.light {
+  background: linear-gradient(135deg, #EAF6F7 0%, #D4EEF1 100%);
+  color: var(--ink);
+}
+.mode-section.dark {
+  background: linear-gradient(135deg, #081A23 0%, #0C2E3A 60%, #083538 100%);
+  color: #fff;
+}
+
+/* Grille intérieure mode */
+.mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(24px,5vw,80px);
+  width: 100%;
+}
+
+/* Numéro décoratif de fond */
+.mode-bg-num {
+  position: absolute;
+  right: -2vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(200px, 28vw, 380px);
+  line-height: 1;
+  letter-spacing: -.06em;
+  pointer-events: none;
+  user-select: none;
+  font-variation-settings: "opsz" 144;
+}
+.mode-section.light .mode-bg-num {
+  color: rgba(19,93,102,.06);
+}
+.mode-section.dark .mode-bg-num {
+  color: rgba(255,255,255,.04);
+}
+
+/* Colonne gauche */
+.mode-left {}
+.mode-num-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.mode-section.light .mode-num-label { color: var(--teal); }
+.mode-section.dark  .mode-num-label { color: var(--bolt-soft); }
+.mode-num-badge {
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: 1px solid currentColor;
+  font-size: 9px;
+}
+.mode-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(32px, 4.5vw, 60px);
+  line-height: .97;
+  letter-spacing: -.025em;
+  margin-bottom: 20px;
+  font-variation-settings: "opsz" 96;
+}
+.mode-section.dark .mode-title { color: #fff; }
+.mode-title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--bolt);
+}
+.mode-objective {
+  font-size: clamp(14px, 1.4vw, 16px);
+  line-height: 1.65;
+  max-width: 44ch;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+.mode-section.light .mode-objective { color: rgba(8,26,35,.68); }
+.mode-section.dark  .mode-objective { color: rgba(255,255,255,.68); }
+
+/* Quand intervient-on */
+.mode-when {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-left: 2px solid var(--bolt);
+  font-size: 13px;
+  line-height: 1.55;
+  font-style: italic;
+  font-family: var(--serif);
+  font-variation-settings: "opsz" 72;
+}
+.mode-section.light .mode-when { background: rgba(19,93,102,.07); color: var(--teal-deep); }
+.mode-section.dark  .mode-when { background: rgba(245,197,24,.06); color: var(--bolt-soft); }
+
+/* Colonne droite : livrables */
+.mode-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.livrable-card {
+  padding: 18px 22px;
+  border-radius: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: transform .25s, box-shadow .25s;
+}
+.mode-section.light .livrable-card {
+  background: rgba(255,255,255,.7);
+  border: 1px solid rgba(19,93,102,.12);
+  backdrop-filter: blur(6px);
+}
+.mode-section.dark .livrable-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+}
+.livrable-card:hover {
+  transform: translateY(-3px);
+}
+.mode-section.light .livrable-card:hover {
+  box-shadow: 0 14px 40px rgba(19,93,102,.12);
+  border-color: rgba(19,93,102,.25);
+}
+.mode-section.dark .livrable-card:hover {
+  box-shadow: 0 14px 40px rgba(0,0,0,.3);
+  border-color: rgba(245,197,24,.2);
+}
+.livrable-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  font-weight: 500;
+}
+.mode-section.light .livrable-icon {
+  background: rgba(19,93,102,.12);
+  color: var(--teal);
+  border: 1px solid rgba(19,93,102,.18);
+}
+.mode-section.dark .livrable-icon {
+  background: rgba(245,197,24,.12);
+  color: var(--bolt);
+  border: 1px solid rgba(245,197,24,.2);
+}
+.livrable-body {}
+.livrable-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.mode-section.light .livrable-title { color: var(--ink); }
+.mode-section.dark  .livrable-title { color: #fff; }
+.livrable-desc {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.mode-section.light .livrable-desc { color: rgba(8,26,35,.55); }
+.mode-section.dark  .livrable-desc { color: rgba(255,255,255,.45); }
+
+/* ── CTA FINAL ── */
+.cta-section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, #0C2E3A 0%, #135D66 30%, #1A7A88 55%, #5BBEC8 80%, #A8DDE3 95%, #EAF6F7 100%);
+  padding: 80px clamp(20px,5vw,80px) 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-glow-approche {
+  position: absolute;
+  left: 50%; top: 40%;
+  transform: translate(-50%, -50%);
+  width: 800px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(245,197,24,.15) 0%, transparent 65%);
+  pointer-events: none;
+  animation: pulse 6s ease-in-out infinite;
+}
+.cta-section-inner { position: relative; z-index: 2; max-width: 680px; }
+.cta-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: .22em;
+  text-transform: uppercase; color: var(--bolt-soft);
+  margin-bottom: 24px;
+}
+.cta-eyebrow::before, .cta-eyebrow::after { content: ''; width: 22px; height: 1px; background: currentColor; flex-shrink: 0; }
+.cta-section h2 {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -.02em;
+  color: #fff;
+  margin-bottom: 20px;
+  font-variation-settings: "opsz" 96;
+}
+.cta-section h2 em { font-style: italic; color: var(--bolt); }
+.cta-section p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(255,255,255,.68);
+  margin-bottom: 36px;
+  max-width: 46ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+/* Footer minimaliste */
+.footer-mini {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 16px 40px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: rgba(8,26,35,.55);
+  backdrop-filter: blur(12px);
+  z-index: 5;
+}
+.footer-mini span { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; color: rgba(255,255,255,.35); }
+.footer-mini nav { display: flex; gap: 20px; }
+.footer-mini nav a {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .12em;
+  color: rgba(255,255,255,.35); transition: color .2s;
+}
+.footer-mini nav a:hover { color: rgba(255,255,255,.75); }
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .75s cubic-bezier(.16,1,.3,1), transform .75s cubic-bezier(.16,1,.3,1); }
+.reveal.in { opacity: 1; transform: none; }
+.reveal-stagger { opacity: 0; transform: translateY(16px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+.reveal-stagger.in { opacity: 1; transform: none; }
+
+/* Delays */
+.d1 { transition-delay: .1s; }
+.d2 { transition-delay: .2s; }
+.d3 { transition-delay: .3s; }
+.d4 { transition-delay: .4s; }
+.d5 { transition-delay: .5s; }
+
+@media (max-width: 900px) {
+  .mode-grid { grid-template-columns: 1fr; gap: 32px; }
+  .mode-bg-num { display: none; }
+  .mode-section { height: auto; min-height: 100vh; padding: 100px 0 60px; }
+}
+@media (max-width: 600px) {
+  .mode-pills { gap: 8px; }
+  .mode-pill { font-size: 9px; padding: 8px 14px; }
+}
+</style>
+<link rel="stylesheet" href="mobile.css"></head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a class="nav-logo" href="index.html"><img src="assets/volte.png" alt="VOLTE" class="nav-logo-img"></a>
+  <div class="nav-links">
+    <a href="nos-interventions.html">Nos interventions</a>
+    <a href="notre-approche.html" style="color:#fff">Notre approche</a>
+    <a href="index.html#qui">Qui sommes-nous</a>
+    <a href="index.html#ressources">Ressources</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Échanger
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10"/><path d="M9 4l4 4-4 4"/></svg>
+  </a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mob" id="nav-mob">
+  <a href="nos-interventions.html">Nos interventions</a>
+  <a href="notre-approche.html">Notre approche</a>
+  <a href="index.html#qui">Qui sommes-nous</a>
+  <a href="index.html#ressources">Ressources</a>
+  <a href="contact.html" class="nav-mob-cta">Échanger</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero-approche" id="top">
+  <div class="ha-halo-1"></div>
+  <div class="ha-halo-2"></div>
+
+  <div class="ha-inner">
+    <div class="ph-label reveal">Notre approche</div>
+    <h1 class="ph-h1-txt reveal d1">Cinq modes.<br><em>Un seul résultat.</em></h1>
+    <p class="ph-sub reveal d2" style="max-width:520px;">Nous n'imposons pas de méthode préétablie. Nous choisissons le mode d'intervention qui correspond à votre contexte, à vos ressources et à votre niveau d'urgence. Ces cinq modes sont combinables à tout moment.</p>
+  </div>
+
+  <!-- Pills de navigation -->
+  <div class="mode-pills">
+    <a href="#diagnostic"     class="mode-pill">01 · Diagnostic</a>
+    <a href="#structuration"  class="mode-pill">02 · Structuration</a>
+    <a href="#pilotage"       class="mode-pill">03 · Pilotage</a>
+    <a href="#mise-en-oeuvre" class="mode-pill">04 · Mise en œuvre</a>
+    <a href="#redressement"   class="mode-pill">05 · Optimisation</a>
+  </div>
+</section>
+
+<!-- ═══ 01 · DIAGNOSTIC ═══ -->
+<section class="mode-section light" id="diagnostic">
+  <div class="mode-bg-num" aria-hidden="true">01</div>
+  <div class="mode-grid">
+
+    <!-- Gauche -->
+    <div class="mode-left">
+      <div class="mode-num-label reveal">
+        <span class="mode-num-badge">01</span>
+        Mode d'intervention
+      </div>
+      <h2 class="mode-title reveal d1">
+        Voir<br>clairement.<br><em>Avant tout.</em>
+      </h2>
+      <p class="mode-objective reveal d2">Comprendre la situation réelle, mesurer l'écart avec l'attendu et prioriser les actions selon leur impact et leur faisabilité. C'est le point de départ de toute intervention sérieuse.</p>
+      <div class="mode-when reveal d3">
+        Nous intervenons en mode Diagnostic avant toute transformation, lorsqu'un problème est identifié sans que ses causes soient clairement établies, ou lorsqu'une décision stratégique doit s'appuyer sur des faits solides.
+      </div>
+    </div>
+
+    <!-- Droite : livrables -->
+    <div class="mode-right">
+      <div class="livrable-card reveal d1">
+        <div class="livrable-icon">01A</div>
+        <div class="livrable-body">
+          <div class="livrable-title">État des lieux documenté</div>
+          <div class="livrable-desc">Analyse de l'existant : organisation, processus, dispositifs, données. Constats factuels, sans jugement hâtif.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d2">
+        <div class="livrable-icon">01B</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Analyse d'écarts et causes racines</div>
+          <div class="livrable-desc">Identification des écarts vis-à-vis des attentes, des réglementations ou des bonnes pratiques sectorielles.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d3">
+        <div class="livrable-icon">01C</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Cartographie des risques et priorités</div>
+          <div class="livrable-desc">Chaque risque est qualifié par son niveau d'impact et sa probabilité. Rien n'est laissé à l'interprétation.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d4">
+        <div class="livrable-icon">01D</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Plan d'actions priorisé (impact/effort)</div>
+          <div class="livrable-desc">Une feuille de route claire, prête à être présentée aux instances et à déclencher la mise en œuvre.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ 02 · STRUCTURATION ═══ -->
+<section class="mode-section dark" id="structuration">
+  <div class="mode-bg-num" aria-hidden="true">02</div>
+  <div class="mode-grid">
+
+    <!-- Gauche -->
+    <div class="mode-left">
+      <div class="mode-num-label reveal">
+        <span class="mode-num-badge">02</span>
+        Mode d'intervention
+      </div>
+      <h2 class="mode-title reveal d1">
+        Poser<br>les règles<br><em>du jeu.</em>
+      </h2>
+      <p class="mode-objective reveal d2">Mettre en place un cadre simple, applicable et partagé : rôles clairs, méthodes documentées, indicateurs de pilotage. Ce que chacun doit savoir pour avancer dans le même sens.</p>
+      <div class="mode-when reveal d3">
+        Nous intervenons en mode Structuration lorsque l'organisation manque de cadre formalisé, que les responsabilités sont floues ou que des exigences réglementaires imposent la production de documents opposables.
+      </div>
+    </div>
+
+    <!-- Droite -->
+    <div class="mode-right">
+      <div class="livrable-card reveal d1">
+        <div class="livrable-icon">02A</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Méthodes et procédures opérationnelles</div>
+          <div class="livrable-desc">Rédigées pour être utilisées, pas archivées. Concises, vérifiables, adaptées au niveau de maturité de l'équipe.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d2">
+        <div class="livrable-icon">02B</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Modèles et politiques écrites</div>
+          <div class="livrable-desc">Politiques de gouvernance, chartes, cadres de contrôle interne. Formats harmonisés et directement actionnables.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d3">
+        <div class="livrable-icon">02C</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Gouvernance et matrice des rôles</div>
+          <div class="livrable-desc">Qui décide, qui valide, qui exécute, qui contrôle. Un RACI clair évite la paralysie et le flou décisionnel.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d4">
+        <div class="livrable-icon">02D</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Indicateurs et tableau de bord de pilotage</div>
+          <div class="livrable-desc">Des KPI choisis pour leur pertinence, pas pour leur volume. Lisibles par les instances comme par les équipes.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ 03 · PILOTAGE ═══ -->
+<section class="mode-section light" id="pilotage">
+  <div class="mode-bg-num" aria-hidden="true">03</div>
+  <div class="mode-grid">
+
+    <!-- Gauche -->
+    <div class="mode-left">
+      <div class="mode-num-label reveal">
+        <span class="mode-num-badge">03</span>
+        Mode d'intervention
+      </div>
+      <h2 class="mode-title reveal d1">
+        Tenir<br>les engage-<br><em>ments.</em>
+      </h2>
+      <p class="mode-objective reveal d2">Assurer dans la durée la tenue des jalons, la remontée des alertes et la qualité des arbitrages. Le pilotage, c'est ce qui transforme un plan en résultat.</p>
+      <div class="mode-when reveal d3">
+        Nous intervenons en mode Pilotage sur des projets à fort enjeu ou à longue durée, lorsque les ressources internes sont saturées ou que la complexité des arbitrages dépasse la capacité disponible en interne.
+      </div>
+    </div>
+
+    <!-- Droite -->
+    <div class="mode-right">
+      <div class="livrable-card reveal d1">
+        <div class="livrable-icon">03A</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Tableau de bord projet (avancement et alertes)</div>
+          <div class="livrable-desc">Synthèse hebdomadaire ou bimensuelle : ce qui avance, ce qui bloque, ce qui doit être décidé.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d2">
+        <div class="livrable-icon">03B</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Comptes rendus de comité structurés</div>
+          <div class="livrable-desc">Relevés de décisions, points ouverts, prochaines étapes. Un document d'une page qui engage les participants.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d3">
+        <div class="livrable-icon">03C</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Suivi des actions et des dépendances</div>
+          <div class="livrable-desc">Rien ne tombe dans un angle mort. Chaque action est attribuée, datée et suivie jusqu'à clôture.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d4">
+        <div class="livrable-icon">03D</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Gestion des risques projet</div>
+          <div class="livrable-desc">Anticipation des blocages, scénarios de contournement, remontées d'alerte calibrées pour ne pas paralyser.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ 04 · MISE EN ŒUVRE OPÉRATIONNELLE ═══ -->
+<section class="mode-section dark" id="mise-en-oeuvre">
+  <div class="mode-bg-num" aria-hidden="true">04</div>
+  <div class="mode-grid">
+
+    <!-- Gauche -->
+    <div class="mode-left">
+      <div class="mode-num-label reveal">
+        <span class="mode-num-badge">04</span>
+        Mode d'intervention
+      </div>
+      <h2 class="mode-title reveal d1">
+        Passer<br>à<br><em>l'acte.</em>
+      </h2>
+      <p class="mode-objective reveal d2">Produire, déployer, accompagner, former et sécuriser. C'est le mode où nous sommes au plus près des équipes, avec une exigence de résultats tangibles à chaque étape.</p>
+      <div class="mode-when reveal d3">
+        Nous intervenons en mode Mise en œuvre lorsque la décision est prise et que l'exécution doit être rapide, fiable et documentée, notamment dans le cadre de déploiements réglementaires, SI ou organisationnels.
+      </div>
+    </div>
+
+    <!-- Droite -->
+    <div class="mode-right">
+      <div class="livrable-card reveal d1">
+        <div class="livrable-icon">04A</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Livrables opérationnels prêts à l'emploi</div>
+          <div class="livrable-desc">Procédures, modèles, matrices, supports : chaque livrable est rédigé pour être utilisé, pas lu une fois et oublié.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d2">
+        <div class="livrable-icon">04B</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Déploiement et accompagnement terrain</div>
+          <div class="livrable-desc">Nous ne livrons pas depuis un bureau. Nous allons au contact des équipes pour sécuriser l'adoption réelle.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d3">
+        <div class="livrable-icon">04C</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Tests, recette et preuves de conformité</div>
+          <div class="livrable-desc">Chaque déploiement est testé et documenté. Les preuves attendues par les superviseurs sont produites dès la mise en œuvre.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d4">
+        <div class="livrable-icon">04D</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Passation et autonomisation</div>
+          <div class="livrable-desc">La mission se termine quand l'organisation sait faire seule. Documentation, formation et transfert sont systématiques.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ 05 · OPTIMISATION & REDRESSEMENT ═══ -->
+<section class="mode-section light" id="redressement">
+  <div class="mode-bg-num" aria-hidden="true">05</div>
+  <div class="mode-grid">
+
+    <!-- Gauche -->
+    <div class="mode-left">
+      <div class="mode-num-label reveal">
+        <span class="mode-num-badge">05</span>
+        Mode d'intervention
+      </div>
+      <h2 class="mode-title reveal d1">
+        Stabiliser.<br>Simplifier.<br><em>Durer.</em>
+      </h2>
+      <p class="mode-objective reveal d2">Quand la situation dérape, quand les résultats ne sont plus au niveau ou quand l'organisation a besoin de reprendre de l'altitude, nous intervenons pour corriger, fiabiliser et améliorer durablement la performance.</p>
+      <div class="mode-when reveal d3">
+        Nous intervenons en mode Optimisation et redressement suite à un contrôle défavorable, une dégradation des indicateurs, une réorganisation difficile ou une perte de maîtrise opérationnelle qui nécessite une remise à plat rapide.
+      </div>
+    </div>
+
+    <!-- Droite -->
+    <div class="mode-right">
+      <div class="livrable-card reveal d1">
+        <div class="livrable-icon">05A</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Plan de redressement priorisé</div>
+          <div class="livrable-desc">Analyse des causes, mesures correctives immédiates et feuille de route de stabilisation. Court terme et moyen terme articulés.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d2">
+        <div class="livrable-icon">05B</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Simplification des processus et des dispositifs</div>
+          <div class="livrable-desc">Supprimer ce qui n'apporte pas de valeur, automatiser ce qui peut l'être, et recentrer les énergies sur l'essentiel.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d3">
+        <div class="livrable-icon">05C</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Amélioration continue et mesure des gains</div>
+          <div class="livrable-desc">Mise en place d'une logique d'amélioration pérenne, avec des indicateurs qui permettent de mesurer les progrès réels.</div>
+        </div>
+      </div>
+      <div class="livrable-card reveal d4">
+        <div class="livrable-icon">05D</div>
+        <div class="livrable-body">
+          <div class="livrable-title">Bilan et recommandations finales</div>
+          <div class="livrable-desc">Un retour d'expérience structuré, une analyse des causes racines et des recommandations pour que la situation ne se reproduise pas.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section" id="contact">
+  <div class="cta-glow-approche"></div>
+  <div class="cta-section-inner">
+    <div class="cta-eyebrow reveal">Prêt à démarrer</div>
+    <h2 class="reveal d1">Quel mode<br>correspond à<br><em>votre situation ?</em></h2>
+    <p class="reveal d2">Trois lignes suffisent pour qu'on vous oriente. Nous revenons sous 48 heures pour un premier échange sans engagement.</p>
+    <div class="cta-btns reveal d3">
+      <a href="contact.html" class="btn btn-primary">
+        Prendre contact
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10"/><path d="M9 4l4 4-4 4"/></svg>
+      </a>
+      <a href="nos-interventions.html" class="btn btn-ghost">Voir nos interventions</a>
+    </div>
+  </div>
+
+  <!-- Footer minimaliste -->
+  <div class="footer-mini" style="padding:16px 40px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:rgba(8,26,35,.55);backdrop-filter:blur(12px);">
+    <span style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);">© 2026 VOLTE · Toulouse · Paris</span>
+    <nav style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="index.html" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);transition:color .2s;" onmouseover="this.style.color='rgba(255,255,255,.75)'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Accueil</a>
+      <a href="contact.html" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);transition:color .2s;" onmouseover="this.style.color='rgba(255,255,255,.75)'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Contact</a>
+      <a href="mentions-legales.html" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);transition:color .2s;" onmouseover="this.style.color='rgba(255,255,255,.75)'" onmouseout="this.style.color='rgba(255,255,255,.35)'">Mentions légales</a>
+      <a href="#" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:rgba(255,255,255,.35);transition:color .2s;" onmouseover="this.style.color='rgba(255,255,255,.75)'" onmouseout="this.style.color='rgba(255,255,255,.35)'">LinkedIn</a><!-- TODO: remplacer # par l'URL LinkedIn VOLTE -->
+    </nav>
+  </div>
+</section>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+<button class="back-to-top" aria-label="Retour en haut">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12V4"/><path d="M4 8l4-4 4 4"/></svg>
+</button>
+</body>
+</html>

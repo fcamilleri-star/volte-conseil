@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales — VOLTE</title>
+  <meta name="description" content="Mentions légales du site volte-conseil.fr — éditeur, hébergeur, propriété intellectuelle et politique de cookies.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://volte-conseil.fr/mentions-legales.html">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="VOLTE">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300;1,9..144,700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<style>
+/* ── SECTIONS LÉGALES ── */
+.ml-section {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.ml-section.light { background: var(--paper); color: var(--ink); }
+.ml-section.dark  { background: linear-gradient(135deg, #081A23 0%, #0C2E3A 60%, #083538 100%); color: #fff; }
+
+/* Contenu pleine largeur */
+.ml-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5vw, 80px);
+  width: 100%;
+}
+
+/* Numéro + label */
+.ml-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.ml-section.light .ml-eyebrow { color: var(--teal); }
+.ml-section.dark  .ml-eyebrow { color: var(--bolt-soft); }
+.ml-eyebrow-num {
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid currentColor;
+  font-size: 9px;
+  flex-shrink: 0;
+}
+
+/* Titre */
+.ml-h2 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 4.5vw, 62px);
+  font-weight: 700;
+  line-height: .97;
+  letter-spacing: -.025em;
+  margin-bottom: 36px;
+  font-variation-settings: "opsz" 96;
+}
+.ml-section.light .ml-h2 { color: var(--ink); }
+.ml-section.dark  .ml-h2 { color: #fff; }
+.ml-h2 em { font-style: italic; font-weight: 300; color: var(--bolt); }
+
+/* Corps de texte */
+.ml-body-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(24px, 4vw, 60px);
+}
+.ml-body-text p {
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.75;
+  margin: 0;
+}
+.ml-section.light .ml-body-text p { color: rgba(8,26,35,.68); }
+.ml-section.dark  .ml-body-text p { color: rgba(255,255,255,.65); }
+
+/* Bloc infos éditeur */
+.ml-card {
+  padding: 24px 28px;
+  border-radius: 14px;
+  font-size: clamp(13px, 1.2vw, 15px);
+  line-height: 1.8;
+}
+.ml-section.light .ml-card {
+  background: rgba(19,93,102,.06);
+  border: 1px solid rgba(19,93,102,.12);
+  color: rgba(8,26,35,.72);
+}
+.ml-section.dark .ml-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  color: rgba(255,255,255,.65);
+}
+.ml-card-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+.ml-section.light .ml-card-label { color: var(--teal); }
+.ml-section.dark  .ml-card-label { color: var(--bolt-soft); }
+
+/* Placeholder à compléter */
+.ml-ph {
+  background: rgba(245,197,24,.2);
+  border: 1px dashed rgba(245,197,24,.6);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #8a6a00;
+}
+.ml-section.dark .ml-ph { color: rgba(245,197,24,.9); }
+
+/* Footer */
+.ml-footer {
+  background: #081A23;
+  padding: 16px 40px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ml-footer span {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.35);
+}
+.ml-footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
+.ml-footer nav a {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: color .2s;
+}
+.ml-footer nav a:hover { color: #fff; }
+.ml-footer nav a.active { color: #fff; }
+
+@media (max-width: 768px) {
+  .ml-section > .ml-content { padding: 110px 24px 24px !important; box-sizing: border-box !important; }
+  .ml-h2 { margin-bottom: 20px !important; }
+  .ml-body-text { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .ml-card { padding: 16px 18px !important; font-size: 13px !important; }
+}
+</style>
+<link rel="stylesheet" href="mobile.css"></head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a class="nav-logo" href="index.html"><img src="assets/volte.png" alt="VOLTE" class="nav-logo-img"></a>
+  <div class="nav-links">
+    <a href="index.html#interventions">Nos interventions</a>
+    <a href="index.html#approche">Notre approche</a>
+    <a href="index.html#qui">Qui sommes-nous</a>
+    <a href="index.html#ressources">Ressources</a>
+  </div>
+  <a class="nav-cta" href="contact.html">Échanger
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10"/><path d="M9 4l4 4-4 4"/></svg>
+  </a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mob" id="nav-mob">
+  <a href="index.html#interventions">Nos interventions</a>
+  <a href="index.html#approche">Notre approche</a>
+  <a href="index.html#qui">Qui sommes-nous</a>
+  <a href="index.html#ressources">Ressources</a>
+  <a href="contact.html" class="nav-mob-cta">Échanger</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="page-hero" style="height:100vh;box-sizing:border-box;position:relative;overflow:hidden;">
+  <div class="ph-halo ph-h1"></div>
+  <div class="ph-halo ph-h2"></div>
+  <div class="page-hero-inner">
+    <div class="ph-label reveal">Informations légales</div>
+    <h1 class="ph-h1-txt reveal">Mentions <em>légales.</em></h1>
+    <p class="ph-sub reveal">Conformément à la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), vous trouverez ci-après les informations légales relatives au site volte-conseil.fr.</p>
+  </div>
+</section>
+<div class="transition-band"></div>
+
+<!-- ═══ 01 · ÉDITEUR ═══ -->
+<section class="ml-section light" id="editeur">
+  <div class="ml-content">
+    <div class="ml-eyebrow">
+      <span class="ml-eyebrow-num">01</span>
+      Éditeur &amp; directeur de publication
+    </div>
+    <h2 class="ml-h2">Qui publie<br><em>ce site ?</em></h2>
+    <div class="ml-body-text">
+      <div class="ml-card">
+        <span class="ml-card-label">Éditeur</span>
+        <strong>Marius Vidaller</strong><br>
+        Société Anonyme<br>
+        SIRET : 103 417 176 00015<br>
+        E-mail : contact@volte-conseil.fr
+      </div>
+      <div class="ml-card">
+        <span class="ml-card-label">Directeur de publication</span>
+        <strong>Florian Camilleri</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 02 · HÉBERGEUR ═══ -->
+<section class="ml-section dark" id="hebergeur">
+  <div class="ml-content">
+    <div class="ml-eyebrow">
+      <span class="ml-eyebrow-num">02</span>
+      Hébergement
+    </div>
+    <h2 class="ml-h2">Où est<br><em>hébergé le site ?</em></h2>
+    <div class="ml-body-text">
+      <div class="ml-card">
+        <span class="ml-card-label">Hébergeur</span>
+        <strong>OVH</strong><br>
+        www.ovhcloud.com
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 03 · PROPRIÉTÉ INTELLECTUELLE ═══ -->
+<section class="ml-section light" id="propriete">
+  <div class="ml-content">
+    <div class="ml-eyebrow">
+      <span class="ml-eyebrow-num">03</span>
+      Propriété intellectuelle
+    </div>
+    <h2 class="ml-h2">Droits<br><em>&amp; contenus.</em></h2>
+    <div class="ml-body-text">
+      <p>L'ensemble des éléments constituant le site volte-conseil.fr — textes, graphismes, logotypes, icônes, images — est la propriété exclusive de l'éditeur ou fait l'objet d'une autorisation d'utilisation.</p>
+      <p>Toute reproduction, représentation, modification ou publication de tout ou partie de ces éléments, sans autorisation écrite préalable de l'éditeur, est strictement interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 04 · COOKIES ═══ -->
+<section class="ml-section dark" id="cookies">
+  <div class="ml-content">
+    <div class="ml-eyebrow">
+      <span class="ml-eyebrow-num">04</span>
+      Cookies &amp; données personnelles
+    </div>
+    <h2 class="ml-h2">Vos données<br><em>nous importent.</em></h2>
+    <div class="ml-body-text">
+      <p>Le site volte-conseil.fr n'utilise aucun cookie de traçage, de profilage ou à des fins publicitaires. Seuls des cookies techniques strictement nécessaires au bon fonctionnement du site peuvent être déposés — exemptés de consentement conformément aux recommandations de la CNIL.</p>
+      <p>Les données transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande. Elles ne sont jamais cédées à des tiers et sont conservées le temps nécessaire au traitement de votre demande.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 05 · RESPONSABILITÉ ═══ -->
+<section class="ml-section light" id="responsabilite">
+  <div class="ml-content">
+    <div class="ml-eyebrow">
+      <span class="ml-eyebrow-num">05</span>
+      Limitation de responsabilité
+    </div>
+    <h2 class="ml-h2">Exactitude<br><em>&amp; fiabilité.</em></h2>
+    <div class="ml-body-text">
+      <p>L'éditeur s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site, sans pouvoir en garantir l'exhaustivité. Les informations présentées ont une vocation indicative et ne sauraient engager la responsabilité de l'éditeur.</p>
+      <p>L'éditeur décline toute responsabilité pour tout dommage résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations mises à disposition sur le site.<br><br>
+      <span style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;opacity:.5;">Dernière mise à jour : 11/05/2026</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ml-footer footer-mini">
+  <span>© 2026 VOLTE · Toulouse · Paris</span>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="contact.html">Contact</a>
+    <a href="mentions-legales.html" class="active">Mentions légales</a>
+    <a href="#" onclick="return false;">LinkedIn</a>
+  </nav>
+</footer>
+
+<script>
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
